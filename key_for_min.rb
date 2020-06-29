@@ -8,7 +8,7 @@ def key_for_min_value(name_hash)
     if lowestNum == 0 
       lowestNum = val
     end
-    if val < lowestNum
+    if val <= lowestNum
       lowestNum = val
       lowestId = id
     end
