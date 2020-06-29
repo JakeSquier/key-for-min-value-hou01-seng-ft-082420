@@ -3,8 +3,10 @@
 
 def key_for_min_value(name_hash)
   lowestId = nil
-  lowestNum = nil
+  lowestNum = 0
   name_hash.each{ |id, val|
+    if lowestNum == 0 
+      lowestNum = val
     if val < lowestNum
       lowestNum = val
       lowestId = id
